@@ -26,6 +26,9 @@ class InputViewController: UIViewController {
     
     
     @IBAction func append(_ sender: UIButton) {
+        if(sender.titleLabel!.text! == "x") {
+            exprDisp.text?.append("$")
+        }
         exprDisp.text?.append(sender.titleLabel!.text!)
         if(sender.titleLabel!.text! == "pi") {
             exprDisp.text?.append("()")
@@ -48,6 +51,18 @@ class InputViewController: UIViewController {
             exprDisp.text = String(format: "%g", value)
         } catch {
             printErr("This expression cannot be evaluated!")
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch(identifier) {
+            case "Show Graph":
+                if let vc = segue.destination as? GraphViewController {
+                    vc.plot(exprDisp.text)
+                }
+            default: break
+            }
         }
     }
     /*

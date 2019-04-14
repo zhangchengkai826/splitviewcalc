@@ -302,24 +302,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZy-pt-wYJ">
-                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONw-Io-zZc" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bZy-pt-wYJ" firstAttribute="centerX" secondItem="0ci-Yh-s96" secondAttribute="centerX" id="6fa-6M-waq"/>
-                            <constraint firstItem="bZy-pt-wYJ" firstAttribute="centerY" secondItem="0ci-Yh-s96" secondAttribute="centerY" id="o7R-Ak-iAQ"/>
+                            <constraint firstItem="ONw-Io-zZc" firstAttribute="centerY" secondItem="0ci-Yh-s96" secondAttribute="centerY" id="3dt-ur-Mpa"/>
+                            <constraint firstItem="ONw-Io-zZc" firstAttribute="top" secondItem="Oko-gl-GXH" secondAttribute="top" id="MzP-EN-9Xc"/>
+                            <constraint firstItem="ONw-Io-zZc" firstAttribute="leading" secondItem="Oko-gl-GXH" secondAttribute="leading" id="WrR-oT-e2K"/>
+                            <constraint firstItem="Oko-gl-GXH" firstAttribute="bottom" secondItem="ONw-Io-zZc" secondAttribute="bottom" id="Xf8-wV-Fi6"/>
+                            <constraint firstItem="ONw-Io-zZc" firstAttribute="centerX" secondItem="0ci-Yh-s96" secondAttribute="centerX" id="nLW-UA-ElI"/>
+                            <constraint firstItem="Oko-gl-GXH" firstAttribute="trailing" secondItem="ONw-Io-zZc" secondAttribute="trailing" id="ohz-ZZ-1JD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oko-gl-GXH"/>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="ONw-Io-zZc" id="kTX-AQ-6hs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zX0-uf-xuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="471"/>
+            <point key="canvasLocation" x="-36" y="470.91454272863569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bFJ-Q0-o6I">
