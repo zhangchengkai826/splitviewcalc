@@ -7,16 +7,49 @@
 //
 
 import UIKit
+import MathParser
 
 class InputViewController: UIViewController {
 
+    @IBOutlet weak var exprDisp: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        clear(self)
 
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func clear(_ sender: Any) {
+        exprDisp.text = ""
+    }
+    
+    
+    @IBAction func append(_ sender: UIButton) {
+        exprDisp.text?.append(sender.titleLabel!.text!)
+        if(sender.titleLabel!.text! == "pi") {
+            exprDisp.text?.append("()")
+        }
+    }
+    
+    func printErr(_ str: String?) {
+        exprDisp.text = str
+    }
+    
+    @IBAction func eval(_ sender: Any) {
+        let charset = CharacterSet(charactersIn: "x")
+        if(exprDisp.text!.rangeOfCharacter(from: charset) != nil) {
+            printErr("Expressions with 'x' cannot be evaluated!")
+            return
+        }
+        
+        do {
+            let value = try exprDisp.text!.evaluate()
+            exprDisp.text = String(format: "%g", value)
+        } catch {
+            printErr("This expression cannot be evaluated!")
+        }
+    }
     /*
     // MARK: - Navigation
 

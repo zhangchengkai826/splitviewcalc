@@ -47,98 +47,170 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-M9-oV7">
                                 <rect key="frame" x="222.5" y="432" width="30" height="30"/>
                                 <state key="normal" title=")"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="Buy-mt-ELn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7R-jI-s5L">
                                 <rect key="frame" x="172.5" y="432" width="30" height="30"/>
                                 <state key="normal" title="("/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="PET-S4-ONE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-ap-1PD">
                                 <rect key="frame" x="122.5" y="432" width="30" height="30"/>
                                 <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="hEn-yo-cbc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYK-cz-QlA">
                                 <rect key="frame" x="72.5" y="432" width="30" height="30"/>
                                 <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="clear:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="3pM-cl-HVj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edM-00-Dqh">
                                 <rect key="frame" x="272.5" y="482" width="30" height="30"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="XAB-3b-Big"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UII-EP-g6e">
                                 <rect key="frame" x="222.5" y="482" width="30" height="30"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="eiX-Vw-l3J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37n-Fa-tfJ">
                                 <rect key="frame" x="172.5" y="482" width="30" height="30"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="q8V-17-dWL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hn8-s8-OtT">
                                 <rect key="frame" x="122.5" y="482" width="30" height="30"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="iiP-4W-O1b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ3-LX-0QV">
                                 <rect key="frame" x="72.5" y="482" width="30" height="30"/>
                                 <state key="normal" title="pi"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="hre-gi-DQg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmC-GT-vkC">
                                 <rect key="frame" x="272.5" y="532" width="30" height="30"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="hJ1-NZ-TiK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y45-pt-WF2">
                                 <rect key="frame" x="222.5" y="532" width="30" height="30"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="TED-hk-6hK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSw-e6-4iB">
                                 <rect key="frame" x="172.5" y="532" width="30" height="30"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="7Ud-jR-bqF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm2-YI-9U1">
                                 <rect key="frame" x="122.5" y="532" width="30" height="30"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="UOo-xW-1eR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5C-F8-UoX">
                                 <rect key="frame" x="72.5" y="532" width="30" height="30"/>
                                 <state key="normal" title="cos"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="nTH-aD-C2f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M16-Tj-W5p">
                                 <rect key="frame" x="272.5" y="582" width="30" height="30"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="hMu-wr-gnZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPe-tj-BiS">
                                 <rect key="frame" x="222.5" y="582" width="30" height="30"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="INU-HI-FQa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-r7-tEo">
                                 <rect key="frame" x="172.5" y="582" width="30" height="30"/>
                                 <state key="normal" title="("/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="3Oy-pS-Exe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9m-Jq-rUf">
                                 <rect key="frame" x="122.5" y="582" width="30" height="30"/>
                                 <state key="normal" title="*"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="wfF-QV-cko"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sU-Fv-dwz">
                                 <rect key="frame" x="72.5" y="582" width="30" height="30"/>
                                 <state key="normal" title="sin"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="22b-VZ-nDQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ju-Pg-znJ">
                                 <rect key="frame" x="272.5" y="632" width="30" height="30"/>
                                 <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="eval:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="vcR-1l-qzb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-rI-3i3">
                                 <rect key="frame" x="222.5" y="632" width="30" height="30"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="62j-cW-ss4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKs-cU-1YS">
                                 <rect key="frame" x="172.5" y="632" width="30" height="30"/>
                                 <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="Lk6-NP-eiO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIh-vV-wnv">
                                 <rect key="frame" x="122.5" y="632" width="30" height="30"/>
                                 <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="WkN-g1-XD9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gan-60-Upq">
                                 <rect key="frame" x="72.5" y="632" width="30" height="30"/>
                                 <state key="normal" title="sqrt"/>
+                                <connections>
+                                    <action selector="append:" destination="MCw-wi-Gqj" eventType="touchUpInside" id="log-o9-7fq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -214,6 +286,9 @@
                         <viewLayoutGuide key="safeArea" id="dD1-7o-iq9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Calculator" id="bX7-sB-bLP"/>
+                    <connections>
+                        <outlet property="exprDisp" destination="blY-o2-iS3" id="k0d-0A-QZs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-Xk-cMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
