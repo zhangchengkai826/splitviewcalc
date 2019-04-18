@@ -12,7 +12,10 @@ import MathParser
 
 class GraphViewController: UIViewController {
     
+    private var mExpr: String? = nil
 
+    @IBOutlet weak var minTextField: UITextField?
+    @IBOutlet weak var maxTextField: UITextField?
     @IBOutlet weak var lineChartView: LineChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,25 +29,47 @@ class GraphViewController: UIViewController {
     }
     
     public func plot(_ expr: String?){
+        if mExpr == nil {
+            mExpr = expr;
+        }
+        
+        var min: Double?
+        var max: Double?
+        if(minTextField == nil || maxTextField == nil || minTextField!.text == nil || maxTextField!.text == nil) {
+            min = -1;
+            max = 1;
+        } else {
+            min = Double(minTextField!.text!);
+            max = Double(maxTextField!.text!);
+            if(min == nil || max == nil || max! <= min!){
+                min = -1;
+                max = 1;
+            }
+        }
+
         let w = Int(self.view.frame.width)
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<w {
-            let substi = ["x": i]
+            let x = (max! - min!) / (Double(w) - 1) * Double(i) + min!
+            let substi = ["x": x]
             do {
-                let value = try expr!.evaluate(substi)
-                let dataEntry = ChartDataEntry(x: Double(i), y: value)
+                let value = try mExpr!.evaluate(substi)
+                let dataEntry = ChartDataEntry(x: x, y: value)
                 dataEntries.append(dataEntry)
             } catch {
                 printErr("cannot plot in this interval!")
                 return
             }
         }
-        let dataset = LineChartDataSet(entries: dataEntries, label: expr!)
+        let dataset = LineChartDataSet(entries: dataEntries, label: mExpr!)
         let data = LineChartData(dataSet: dataset)
         lineChartView.data = data
     }
 
-
+    @IBAction func onReplotButtonPressed(_ sender: UIButton) {
+        plot(nil);
+    }
+    
     /*
     // MARK: - Navigation
 

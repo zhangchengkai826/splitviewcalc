@@ -303,23 +303,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONw-Io-zZc" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="539"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6c-1C-fg7">
+                                <rect key="frame" x="16" y="617" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="TLr-zY-yM5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLO-As-Rv2">
+                                <rect key="frame" x="139" y="617" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-dW-9CB">
+                                <rect key="frame" x="50.5" y="646" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddl-MX-8Ne">
+                                <rect key="frame" x="298" y="617" width="52" height="30"/>
+                                <state key="normal" title="Re-Plot"/>
+                                <connections>
+                                    <action selector="onReplotButtonPressed:" destination="zXm-zw-B09" eventType="touchUpInside" id="Q2u-Il-KbL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfL-34-Qe9">
+                                <rect key="frame" x="171.5" y="646" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ONw-Io-zZc" firstAttribute="centerY" secondItem="0ci-Yh-s96" secondAttribute="centerY" id="3dt-ur-Mpa"/>
+                            <constraint firstItem="Oko-gl-GXH" firstAttribute="trailing" secondItem="Ddl-MX-8Ne" secondAttribute="trailing" constant="25" id="4oD-hL-faa"/>
+                            <constraint firstItem="HUf-dW-9CB" firstAttribute="bottom" secondItem="Oko-gl-GXH" secondAttribute="bottom" id="BJm-02-cSh"/>
+                            <constraint firstItem="HUf-dW-9CB" firstAttribute="centerX" secondItem="q6c-1C-fg7" secondAttribute="centerX" id="DTS-Am-8JV"/>
+                            <constraint firstItem="Ddl-MX-8Ne" firstAttribute="centerY" secondItem="q6c-1C-fg7" secondAttribute="centerY" id="GRK-q4-D9d"/>
+                            <constraint firstItem="PfL-34-Qe9" firstAttribute="centerY" secondItem="HUf-dW-9CB" secondAttribute="centerY" id="Ijq-XQ-tXW"/>
+                            <constraint firstItem="q6c-1C-fg7" firstAttribute="top" secondItem="ONw-Io-zZc" secondAttribute="bottom" constant="14" id="M4P-31-j9c"/>
                             <constraint firstItem="ONw-Io-zZc" firstAttribute="top" secondItem="Oko-gl-GXH" secondAttribute="top" id="MzP-EN-9Xc"/>
+                            <constraint firstItem="Oko-gl-GXH" firstAttribute="bottom" secondItem="ONw-Io-zZc" secondAttribute="bottom" constant="64" id="Nke-py-mJe"/>
+                            <constraint firstItem="CLO-As-Rv2" firstAttribute="centerY" secondItem="q6c-1C-fg7" secondAttribute="centerY" id="VQf-Qe-jcK"/>
                             <constraint firstItem="ONw-Io-zZc" firstAttribute="leading" secondItem="Oko-gl-GXH" secondAttribute="leading" id="WrR-oT-e2K"/>
-                            <constraint firstItem="Oko-gl-GXH" firstAttribute="bottom" secondItem="ONw-Io-zZc" secondAttribute="bottom" id="Xf8-wV-Fi6"/>
+                            <constraint firstItem="q6c-1C-fg7" firstAttribute="leading" secondItem="Oko-gl-GXH" secondAttribute="leading" constant="16" id="boR-gx-lV0"/>
+                            <constraint firstItem="CLO-As-Rv2" firstAttribute="leading" secondItem="q6c-1C-fg7" secondAttribute="trailing" constant="26" id="g8V-hd-ljI"/>
                             <constraint firstItem="ONw-Io-zZc" firstAttribute="centerX" secondItem="0ci-Yh-s96" secondAttribute="centerX" id="nLW-UA-ElI"/>
                             <constraint firstItem="Oko-gl-GXH" firstAttribute="trailing" secondItem="ONw-Io-zZc" secondAttribute="trailing" id="ohz-ZZ-1JD"/>
+                            <constraint firstItem="PfL-34-Qe9" firstAttribute="centerX" secondItem="CLO-As-Rv2" secondAttribute="centerX" id="rD3-lW-Dv3"/>
+                            <constraint firstItem="CLO-As-Rv2" firstAttribute="width" secondItem="q6c-1C-fg7" secondAttribute="width" id="vXg-Vh-sHx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oko-gl-GXH"/>
                     </view>
                     <connections>
                         <outlet property="lineChartView" destination="ONw-Io-zZc" id="kTX-AQ-6hs"/>
+                        <outlet property="maxTextField" destination="CLO-As-Rv2" id="bni-2A-sUa"/>
+                        <outlet property="minTextField" destination="q6c-1C-fg7" id="HEI-Y5-Odr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zX0-uf-xuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
